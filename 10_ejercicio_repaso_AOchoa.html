@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*        
+        * Crear un array de 10 números. Usar un for para asignar los valores de 20 a 11 a las 10 posiciones
+        * (en orden descendente). Usar un for para mostrar los 10 valores en pantalla.
+        */        
+        let array=[];
+        array.length=10;
+        for (let j=20; j>10; j--){
+            array[20-j]=j;           //OJO!!! asignamos los valores 20 al 11 en el array!!
+        }
+        for (let i=0; i<array.length; i++){
+            console.log(array[i]);
+        }
+
+
+    </script>
+</body>
+
+</html>

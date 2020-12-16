@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        * Crear un array de 10 números y finalmente muestra los 10 valores en pantalla.
+        */
+
+        let array = [];
+        for (let i=0; i<10; i++){   //creamos el array con 10 valores random.
+            array[i]=Math.floor(Math.random() * 100);  //Math.floor(Math.random() * 100); ---> returns a random integer from 0 to 99.
+        }
+        
+        for (let j=0; j<array.length; j++){   //mostramos todos los valores en console.
+            console.log(array[j]);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        * Crear un array de 11 ints. Pedir al usuario que introduzca valores entre 0 y 10. Cada vez que introduzca un dígito, añadir uno al valor en esa posición del array.
+        * Si por ejemplo introduce un 3, sumar uno a la posición 3. Mostrar en pantalla los valores. Si introduce un número mayor que 10, decir que ese número es incorrecto.
+        * Si introduce un número negativo, mostrar en pantalla el número de cada posición y el valor que contiene. Por ejemplo, si introduce 7, 7, 7, 5, 6, 5, 9, 9, 10, -1 mostrar:
+        * 0
+        * 1	0
+        * 2	0
+        * 3	0
+        * 4	0
+        * 5	2
+        * 6	1
+        * 7	3
+        * 9	2
+        * 10 1
+        */
+        let array1 = [];
+        array1.length=11;
+        for (let i=0; i<11; i++){
+            array1[i]= i;      
+        }
+        let array2 = [];
+        array2.length=11;
+        for (i=0; i<11; i++){
+            array2[i]= 0;      
+        }
+
+        let num=0;
+        while (num != -1){
+            num=parseInt(prompt("Introduce un valor entre 0 y 10"));
+            if (num > 10){
+                num=parseInt(prompt("Número incorrecto! Introduce cualquier caracter para salir"));
+            } else {  //si el valor es <=10
+                for (i=0; i<11; i++){
+                    if (num == array1[i]){
+                        array2[i]=array2[i] + 1;
+                    }
+                }
+            }
+        }
+
+        let array3 = [];
+        array3.length=11;
+        for (i=0; i<11; i++){
+            array3[i]= array1[i] + " " + array2[i];
+            console.log(array3[i]);
+        }
+
+
+    </script>
+</body>
+
+</html>
